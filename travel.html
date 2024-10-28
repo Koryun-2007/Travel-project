@@ -24,14 +24,24 @@
         </nav>
 
         <div class="icons">
-            <i class="fas fa-search"></i>
-            <i class="fas fa-user"></i>
+            <i  class="fas fa-search"> </i>
+            <i class="fas fa-user clickable-icon" id="userIcon"></i>
         </div>
 
-        <form action="" class="search-bar">
-            <input type="search" id="search" placeholder="search here">
-            <label for="search" class="fas fa-search"></label>
-        </form>
+        <div id="authModal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h2>Sign In or Sign Up</h2>
+                <form>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    <button type="submit">Sign In</button>
+                    <button type="button" class="sign-up-btn">Sign Up</button>
+                </form>
+            </div>
+        </div>
     </header>
 
     <div class="login-form ">
@@ -104,5 +114,117 @@
             </form>
         </div>
     </section>
+    <section class="packages">
+        <h2 class="heading">
+            <span>p</span>
+            <span>a</span>
+            <span>c</span>
+            <span>k</span>
+            <span>a</span>
+            <span>g</span>
+            <span>e</span>
+            <span>s</span>
+        </h2>
+    
+        <div class="inner">
+            <div class="box">
+                <img src="images/p-1.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i>Mumbai</h3>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <div class="stars">
+                        <i class="as ffa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="prices">$90.00 <span>$120.00</span></div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/p-2.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i>Hawai</h3>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="prices">$90.00 <span>$120.00</span></div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/p-3.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i>Sidney</h3>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="prices">$90.00 <span>$120.00</span></div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/p-4.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i>Paris</h3>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="prices">$90.00 <span>$120.00</span></div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/p-5.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i>Tokyo</h3>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="prices">$90.00 <span>$120.00</span></div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/p-6.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i>Egipt</h3>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="prices">$90.00 <span>$120.00</span></div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="signin.js"></script>
 </body>
 </html>
