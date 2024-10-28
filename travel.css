@@ -263,3 +263,41 @@ header .search-bar label{
 .home .controls .vid-btn.active{
     background: var(--orange);
 }
+
+.book .inner{
+    display: flex;
+    align-items: center;
+}
+
+.book .inner .image{
+    width: 50%;
+}
+
+.book .inner .image img{
+    width: 100%;
+}
+ .book .inner form{
+    width: 50%;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+    padding: 1.5rem;
+ }
+
+ .book .inner form .inputBox h3{
+     font-size: 1.5rem;
+     color: var(--light-gray);
+     padding: .5rem 0;
+ }
+
+ .book .inner form .inputBox input{
+     width: 100%;
+     border: .1rem solid rgba(0,0,0,.1);
+     font-size: 1.5rem;
+     color: var(--gray);
+     text-transform: none;
+     padding: .5rem;
+ }
+
+ .book .inner form .btn{
+     margin: .5rem 0;
+ }
