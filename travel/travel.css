@@ -457,3 +457,237 @@ form button:hover {
     box-shadow: 0 2rem 2rem rgba(0,0,0,.2);
     cursor: pointer;
 }
+ /* ---------galery---------- */
+
+ .gallery .inner{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+ }
+
+ .gallery .inner .box{
+     width: 24%;
+     position: relative;
+     overflow: hidden;
+ }
+
+ .gallery .inner .box img{
+     width: 100%;
+     object-fit: cover;
+     height: 100%;
+ }
+ .gallery .inner .box .content{
+     position: absolute;
+     top: -100%; left: -100%;
+     height: 100%;
+     width: 100%;
+     text-align: center;
+     padding: 3rem;
+     background: rgba(0,0,0,.5);
+     cursor: pointer;
+ }
+ 
+ .gallery .inner .box:hover .content{
+     top: 0; left: 0;
+ }
+
+ .gallery .inner .box .content h3{
+     font-size: 1.5rem;
+     color: var(--orange);
+ }
+
+ .gallery .inner .box .content p{
+     font-size: 1rem;
+     color: var(--white);
+     padding-bottom: .2rem;
+ }
+
+/* -------contact-------- */
+.contact .inner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+}
+.contact .inner .image{
+    width: 45%;
+}
+
+.contact .inner .image img{
+    width: 100%;
+}
+
+.contact .inner form{
+   width: 45%;
+   box-shadow: 0 1rem 2rem rgba(0,0,0,.5);
+   padding: 1rem;
+}
+
+.contact .inner form .inputBox{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+
+.contact .inner form .inputBox input{
+   width: 49%;
+   background: rgba(0,0,0,.1);
+   margin: .5rem 0;
+   font-size: 1rem;
+   padding: .5rem;
+   text-transform: none;
+   color: var(--gray);
+}
+
+.contact .inner form textarea{
+   width: 100%;
+   background: rgba(0,0,0,.1);
+   resize: none;
+   padding: .3rem 0;
+}
+/* --------footer------- */
+footer{
+   background: var(--gray);
+}
+footer .inner{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 1rem;
+   padding: .3rem;
+}
+footer .inner .box{
+   width: 24%;
+}
+
+footer .inner .box h3{
+   color: var(--white);
+   font-size: 1.2rem;
+}
+
+footer .inner .box p{
+   color: var(--white);
+   font-size: .9rem;
+   padding: 0.05rem 0;
+}
+footer .inner .box a{
+   color: var(--white);
+   display: block;
+   padding: 0.05rem 0;
+}
+footer .inner .box a:hover{
+   color: var(--orange);
+   text-decoration: underline;
+}
+
+footer .created{
+   padding: .8rem 0;
+   color: var(--white);
+   text-align: center;
+   font-size: .8rem;
+   border-top: .1rem solid var(--light-gray);
+}
+footer .created span{
+   color: var(--orange);
+   cursor: pointer;   
+}
+
+
+
+/* ---media--- */
+
+@media(max-width:1200px){
+   html{
+       font-size: 90%;
+   }
+   section{
+       padding: .5rem 1%;
+   }
+}
+
+@media(max-width:1000px){
+   section{
+       padding: .5rem .5rem;
+   }
+   .packages .inner .box{
+       width: 45%;
+   }
+   .services .inner .box{
+       width: 23%;
+   }
+   .gallery .inner .box{
+       width: 23%;
+   }
+   footer .inner .box{
+       width: 23%;
+   }
+}
+
+@media(max-width:920px){
+   header #menu-bar{
+       display: initial;
+   }
+   header .navbar{
+       position: absolute;
+       top: 100%; left: 0; right: 0;
+       background: var(--gray);
+       border-top: .1rem solid var(--light-gray);
+       clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+   }
+   header .navbar.active{
+       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+   }
+   header .navbar a{
+       display: block;
+       background: #222;
+       margin: .5rem .2rem;
+       padding: .3rem;
+       border-radius: .5rem;
+   }
+   .book .inner{
+       flex-direction: column;
+   }
+   .book .inner .image{
+       display: none;
+   }
+   .book .inner form{
+       width: 90%;
+   }
+   .services .inner .box{
+       width: 48%;
+   }
+   .gallery .inner .box{
+       width: 48%;
+   }
+   .contact .inner{
+       flex-direction: column;
+   }
+   .contact .inner form{
+       width: 90%;
+       margin-bottom: 2rem;
+   }
+   .contact .inner .image{
+       display: none;
+   }
+}
+
+@media(max-width:570px){
+   .heading span{
+       padding: .5rem;
+       font-size: 2rem;
+   }
+   .packages .inner .box{
+       width: 90%;
+   }
+   .services .inner .box{
+       width: 90%;
+   }
+   .gallery .inner .box{
+       width: 90%;
+   }
+   footer .inner .box{
+       width: 45%;
+   }
+}
